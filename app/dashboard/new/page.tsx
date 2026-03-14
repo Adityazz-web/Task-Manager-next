@@ -53,7 +53,7 @@ export default function New(){
                 <input type="text" name="title" value={form.title} placeholder="Enter task title" className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black" onChange={(e)=>setForm({...form, [e.target.name]:e.target.value})} required/>
             </div>
             <div className="flex flex-col gap-2">
-                <p className="text-lg font-medium">Email</p>
+                <p className="text-lg font-medium">Description</p>
                 <textarea name="description" value={form.description} placeholder="Enter task description" className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black" onChange={(e)=>setForm({...form, [e.target.name]:e.target.value})} required></textarea>
             </div>
             <div className="flex flex-col gap-2">
